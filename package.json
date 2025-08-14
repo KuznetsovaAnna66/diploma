@@ -1,7 +1,7 @@
 {
    "name": "diploma",
    "version": "0.1.0",
-   "homepage": "https://github.com/KuznetsovaAnna66/diploma",
+   "homepage": "https://kuznetsovaanna66.github.io/diploma",
    "private": true,
    "dependencies": {
       "@ant-design/icons": "^4.7.0",
