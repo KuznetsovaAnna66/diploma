@@ -69,7 +69,7 @@ function TrainSelectionPage() {
    const loadingLastTickets = useSelector(selectLoadingLastTickets);
 
    let url = useMemo(
-      () => `${process.env.REACT_APP_TICKETS}from_city_id=${
+      () => `${process.env.REACT_APP_TICKETS}?from_city_id=${
          departureCity.id
       }&to_city_id=${arrivalCity.id}&date_start=${dayjs(departureDate).format(
          'YYYY-MM-DD'

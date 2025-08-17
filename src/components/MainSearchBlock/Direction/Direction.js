@@ -44,7 +44,7 @@ function Direction({ name, placeholder, className }) {
       setError(null);
       try {
          const response = await fetch(
-            `${process.env.REACT_APP_SEARCH_CITY}=${value}`
+            `${process.env.REACT_APP_SEARCH_CITY}?name=${value}`
          );
          if (!response.ok) {
             throw new Error('Что-то пошло не так');
@@ -108,9 +108,7 @@ function Direction({ name, placeholder, className }) {
             </AutoComplete>
          )}
 
-         {
-            error && <PopUP reason="error" message={error} />
-         }
+         {error && <PopUP reason="error" message={error} />}
       </>
    );
 }
